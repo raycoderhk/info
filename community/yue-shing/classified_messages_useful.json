@@ -1935,5 +1935,883 @@
       "鄧生 Pickleball 愉景"
     ],
     "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User suggests contacting Towngas for an inspection.",
+    "entities": [
+      "Towngas"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User notes that scheduling a Towngas appointment is fast.",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User reports low water pressure affecting shower experience.",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User describes water heater temperature display dropping rapidly during use.",
+    "entities": [],
+    "language": "mixed"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User suggests increasing the capacity.",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "Suggesting an uneco-friendly method to keep water boiler running",
+    "entities": [
+      "洗手盆",
+      "熱水",
+      "爐"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "Describing solution of replacing set and finding stones stuck in faucet",
+    "entities": [
+      "龍頭",
+      "石仔"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "Sharing experience about scam call claiming to be Jiangsu Communications Bureau",
+    "entities": [
+      "江蘇通信局",
+      "身份證號碼"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "Recommending Whoscall app to block or screen calls",
+    "entities": [
+      "whoscall"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Reporting full closure of Tuen Mun Highway towards Tsuen Wan near Ting Kau",
+    "entities": [
+      "屯門公路",
+      "荃灣",
+      "汀九"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "restaurant",
+    "useful": true,
+    "summary": "Recommending a shop is okay",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Providing transport route from Yuet Cheng to HK/Kowloon",
+    "entities": [
+      "愉城",
+      "港九"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Suggesting to buy now",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "news",
+    "useful": true,
+    "summary": "News article about a child safety incident in an indoor playroom.",
+    "entities": [
+      "Sky Post",
+      "child safety",
+      "playroom"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "doctor",
+    "useful": true,
+    "summary": "Advice regarding pink eye symptoms timing.",
+    "entities": [
+      "pink eye"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "restaurant",
+    "useful": true,
+    "summary": "Mention of Kam Yuen Restaurant.",
+    "entities": [
+      "Kam Yuen Restaurant"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "restaurant",
+    "useful": true,
+    "summary": "Sushiro coupon promotion announcement.",
+    "entities": [
+      "Sushiro",
+      "U Lifestyle",
+      "coupon"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Advice on parking at Disney and taking shuttle.",
+    "entities": [
+      "Disney",
+      "shuttle"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "doctor",
+    "useful": true,
+    "summary": "Mention of specific eye clinic.",
+    "entities": [
+      "Tsuen Wan Eye and Cataract Centre"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "news",
+    "useful": true,
+    "summary": "Report of a woman stabbed outside MTR Rainbow Station, suspect fled, police pursuing.",
+    "entities": [
+      "MTR Rainbow Station",
+      "Police",
+      "Woman",
+      "Suspect"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Requesting complaint email contact for Yu Chui New Town Property Management.",
+    "entities": [
+      "Yu Chui New Town",
+      "Property Management"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Suggestion to check with the Food and Environmental Hygiene Department.",
+    "entities": [
+      "Food and Environmental Hygiene Department"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "event",
+    "useful": true,
+    "summary": "Plan for residents from specific blocks to cheer from windows during an event.",
+    "entities": [
+      "Block 3",
+      "Block 1",
+      "Block 2",
+      "Block 4",
+      "Block 6",
+      "Block 5",
+      "Block 7",
+      "Block 8"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "news",
+    "useful": true,
+    "summary": "Shared link to a news article.",
+    "entities": [
+      "ynews"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Update that management replied the issue belongs to the mall and waiting for fire department.",
+    "entities": [
+      "Management Office",
+      "Mall",
+      "Fire Department"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "Warning to neighbors about thieves appearing in the area.",
+    "entities": [
+      "小偷"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "Report of cockroaches linked to a hoarder on a lower floor rather than the garbage room.",
+    "entities": [
+      "曱甴",
+      "垃圾房",
+      "收藏家"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "Advice to pour out standing water regularly to prevent pests.",
+    "entities": [
+      "倒水"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User shares experience of signing HKBN contract outside MTR station.",
+    "entities": [
+      "HKBN",
+      "地鐵"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Advice not to rush when dealing with service provider sales pressure.",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Shared pricing details for HKBN plan signed last year.",
+    "entities": [
+      "HKBN",
+      "24 個月",
+      "$99"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Experience sharing about cancelling HKT broadband.",
+    "entities": [
+      "HKT",
+      "寬頻"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Realization that the service was actually Netvigator.",
+    "entities": [
+      "netvigator"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "doctor",
+    "useful": true,
+    "summary": "Health advice regarding infection and pus.",
+    "entities": [
+      "癑"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Question asking how to check for haunted houses when renting or buying.",
+    "entities": [
+      "凶宅",
+      "租",
+      "買"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Suggestion to use bank online valuation to check property status.",
+    "entities": [
+      "銀行",
+      "網上估價"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "news",
+    "useful": true,
+    "summary": "News link about agents hiding haunted house information and legal consequences.",
+    "entities": [
+      "Yahoo",
+      "凶宅",
+      "物業代理"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Advice to get owner confirmation that no deaths occurred in the unit.",
+    "entities": [
+      "業主",
+      "單位"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Traffic update regarding left turn restriction and congestion.",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Comment on hourly parking availability depending on cars leaving.",
+    "entities": [],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "Update on current swimming pool capacity being under 50 people.",
+    "entities": [
+      "泳池"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "doctor",
+    "useful": true,
+    "summary": "Recommendation for dentist Cen Jian for braces.",
+    "entities": [
+      "岑儉"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "Inquiry about internet plan pricing and router rental options.",
+    "entities": [
+      "router",
+      "178"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "Discussion on buying own router vs company provided compatibility.",
+    "entities": [
+      "router"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Question about payment methods and discounts at Adventure Land.",
+    "entities": [
+      "冒險樂園"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "doctor",
+    "useful": true,
+    "summary": "Shared experience of seeing a western doctor for inflammation.",
+    "entities": [
+      "西醫"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "doctor",
+    "useful": true,
+    "summary": "Mentioned using Western Health medical card for consultation.",
+    "entities": [
+      "卓健",
+      "醫療咭"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Shared a link to xobox.hk website.",
+    "entities": [
+      "xobox.hk"
+    ],
+    "language": "en"
+  },
+  {
+    "category": "event",
+    "useful": true,
+    "summary": "Promotion for MTR Mobile daily lucky draw for registered users.",
+    "entities": [
+      "MTR Mobile"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "education",
+    "useful": true,
+    "summary": "Claim of ability to handle lower primary school workload.",
+    "entities": [
+      "初小"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "education",
+    "useful": true,
+    "summary": "Observation that upper primary school content is very difficult now.",
+    "entities": [
+      "高小"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Shared practical property price per square foot approx 8823 HKD.",
+    "entities": [
+      "8823 元",
+      "Vanessa"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "Asked Kenneth to check if water valve was removed in nearby units.",
+    "entities": [
+      "Kenneth cheung",
+      "水掣",
+      "ISAIAH"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Shared a residential property listing link from 28hse.",
+    "entities": [
+      "28hse.com",
+      "Maple 愉景住客"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Mentioned property price 300k for 1000 sq ft with 50k down payment.",
+    "entities": [
+      "30 萬",
+      "1000 呎",
+      "5 萬",
+      "Rick"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "restaurant",
+    "useful": true,
+    "summary": "Commented first few bites of food tasted strange.",
+    "entities": [
+      "LALA🌺 七座 37A"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "restaurant",
+    "useful": true,
+    "summary": "Commented the food was good eventually.",
+    "entities": [
+      "LALA🌺 七座 37A"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "event",
+    "useful": true,
+    "summary": "Announced sign-up area for mysterious alcohol activity.",
+    "entities": [
+      "酒精活動",
+      "Rico"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "event",
+    "useful": true,
+    "summary": "Repeated sign-up info for alcohol activity.",
+    "entities": [
+      "酒精活動",
+      "LALA🌺 七座 37A"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "User mentions using a heat lamp.",
+    "entities": [
+      "暖燈"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "User states they do not dry clothes in the bathroom.",
+    "entities": [
+      "廁所",
+      "晾衫"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User installed both appliances in their new unit.",
+    "entities": [
+      "2 樣"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User notes the ceiling condition is much better.",
+    "entities": [
+      "天花"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "New resident introduces themselves in Block 7.",
+    "entities": [
+      "7 座"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User reports water leakage from the upstairs unit.",
+    "entities": [
+      "樓上",
+      "滲水"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User discusses inability to complain to management.",
+    "entities": [
+      "管理處"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "User suggests uniting all affected residents.",
+    "entities": [
+      "住户"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User considers replacing the bathroom heater.",
+    "entities": [
+      "浴室寶"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User advises demanding compensation directly.",
+    "entities": [
+      "賠償"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "User questions the electricity consumption claims.",
+    "entities": [
+      "用電量"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "User advises against using heater for drying clothes.",
+    "entities": [
+      "浴室寶",
+      "乾衫"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "User compares heater electricity usage to air conditioning.",
+    "entities": [
+      "浴室寶",
+      "用電量",
+      "冷氣機"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "tech_tip",
+    "useful": true,
+    "summary": "User recommends using a dehumidifier for drying clothes.",
+    "entities": [
+      "抽濕機",
+      "乾衫"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Inquiry about parking motorcycles in car spaces.",
+    "entities": [
+      "電單車",
+      "私家車位"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "traffic",
+    "useful": true,
+    "summary": "Opinion that cars parking in motorcycle spots is not allowed.",
+    "entities": [
+      "私家車",
+      "電單車位"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "Arranged intercom replacement via Ms. Kwok.",
+    "entities": [
+      "郭小姐",
+      "對講機",
+      "師傅"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "Water Seepage Office conducted testing without notification.",
+    "entities": [
+      "滲水辦"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "Request to notify Water Seepage Office regarding complaint.",
+    "entities": [
+      "滲水辦"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "Kitchen sewage issue resolved by Ms. Kwok.",
+    "entities": [
+      "廚房",
+      "污水",
+      "郭小姐"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "Security knocking on door is normal procedure.",
+    "entities": [
+      "保安"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "shopping",
+    "useful": true,
+    "summary": "Vending machine price for lemon tea.",
+    "entities": [
+      "汽水機",
+      "陽光檸檬茶",
+      "2.1"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User requests contact number for the downstairs neighbor.",
+    "entities": [
+      "Crystal Wong",
+      "樓下座頭",
+      "電話"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User advises acting quickly while water is currently leaking.",
+    "entities": [
+      "LALA🌺 七座 37A",
+      "水"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User questions how many people diligently maintain their air conditioning.",
+    "entities": [
+      "LALA🌺 七座 37A",
+      "冷氣"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User suggests further action if non-cooperation continues.",
+    "entities": [
+      "LALA🌺 七座 37A"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User explains the timeline from complaint to repair.",
+    "entities": [
+      "LALA🌺 七座 37A",
+      "投訴"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User suggests allowing entry into the house for inspection.",
+    "entities": [
+      "LALA🌺 七座 37A",
+      "入屋"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "repair",
+    "useful": true,
+    "summary": "User shares experience of wall damage due to neighbor's water leakage.",
+    "entities": [
+      "Kelvin 愉景新城",
+      "飯廳天井",
+      "窗",
+      "牆"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User describes security control room staff bringing tools.",
+    "entities": [
+      "YC",
+      "control room",
+      "電筒",
+      "鏡"
+    ],
+    "language": "mixed"
+  },
+  {
+    "category": "community",
+    "useful": true,
+    "summary": "User reports receiving a noise complaint from management at night.",
+    "entities": [
+      "Kelvin 愉景新城",
+      "對講機",
+      "嘈音"
+    ],
+    "language": "zh"
+  },
+  {
+    "category": "service",
+    "useful": true,
+    "summary": "User asks if a permit was applied for.",
+    "entities": [
+      "Kelvin 愉景新城",
+      "申請"
+    ],
+    "language": "zh"
   }
 ]
