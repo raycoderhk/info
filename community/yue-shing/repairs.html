@@ -803,7 +803,7 @@
             if (hubData.length > 0) return; // Already loaded
             
             try {
-                const response = await fetch('https://raw.githubusercontent.com/raycoderhk/community-hub/main/website/classified_messages_useful.json');
+                const response = await fetch('classified_messages_useful.json');
                 hubData = await response.json();
                 hubData.sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
                 
