@@ -314,6 +314,30 @@
             margin-bottom: 15px;
         }
         
+        .date-filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .date-filters select {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 0.95em;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+            flex: 1;
+            min-width: 120px;
+        }
+        
+        .date-filters select:focus {
+            outline: none;
+            border-color: var(--hub);
+        }
+        
         .hub-search input:focus {
             outline: none;
             border-color: var(--hub);
@@ -693,6 +717,10 @@
                         <div class="stat-label">有用提示</div>
                     </div>
                     <div class="stat-card">
+                        <div class="stat-number" id="hub-filtered">0</div>
+                        <div class="stat-label">篩選結果</div>
+                    </div>
+                    <div class="stat-card">
                         <div class="stat-number" id="hub-categories">-</div>
                         <div class="stat-label">分類</div>
                     </div>
@@ -700,15 +728,21 @@
                         <div class="stat-number" id="hub-contributors">-</div>
                         <div class="stat-label">鄰居貢獻</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="hub-status">🔄</div>
-                        <div class="stat-label">更新中</div>
-                    </div>
                 </div>
             </div>
             
             <div class="hub-search">
                 <input type="text" id="hubSearch" placeholder="🔍 搜索提示 (例如：巴士、醫生、餐廳、淘寶...)">
+                <div class="date-filters">
+                    <select id="yearFilter" onchange="filterHub(hubActiveCategory)">
+                        <option value="all">全部年份</option>
+                        <!-- Years will be added dynamically -->
+                    </select>
+                    <select id="monthFilter" onchange="filterHub(hubActiveCategory)">
+                        <option value="all">全部月份</option>
+                        <!-- Months will be added dynamically -->
+                    </select>
+                </div>
                 <div class="hub-filters" id="hubFilters">
                     <button class="hub-filter-btn active" onclick="filterHub('all')">全部</button>
                     <!-- Category buttons will be added dynamically -->
@@ -843,6 +877,37 @@
                 btn.onclick = () => filterHub(cat);
                 container.appendChild(btn);
             });
+            
+            // Populate year filter
+            renderYearFilter();
+            // Populate month filter
+            renderMonthFilter();
+        }
+        
+        function renderYearFilter() {
+            const yearSelect = document.getElementById('yearFilter');
+            const years = [...new Set(hubData.map(t => String(t.date).substring(0, 4)))].sort().reverse();
+            
+            years.forEach(year => {
+                const opt = document.createElement('option');
+                opt.value = year;
+                opt.textContent = year + ' 年';
+                yearSelect.appendChild(opt);
+            });
+        }
+        
+        function renderMonthFilter() {
+            const monthSelect = document.getElementById('monthFilter');
+            const months = [...new Set(hubData.map(t => String(t.date).substring(0, 7)))].sort().reverse();
+            
+            months.forEach(month => {
+                const opt = document.createElement('option');
+                opt.value = month;
+                // Convert YYYY-MM to YYYY 年 MM 月
+                const [year, m] = month.split('-');
+                opt.textContent = year + ' 年 ' + m + ' 月';
+                monthSelect.appendChild(opt);
+            });
         }
         
         function filterHub(category) {
@@ -856,12 +921,32 @@
             });
             
             const searchTerm = document.getElementById('hubSearch').value.toLowerCase();
+            const selectedYear = document.getElementById('yearFilter').value;
+            const selectedMonth = document.getElementById('monthFilter').value;
             
             hubFiltered = hubData.filter(tip => {
+                // Category filter
                 if (hubActiveCategory !== 'all' && tip.category !== hubActiveCategory) {
                     return false;
                 }
                 
+                // Year filter
+                if (selectedYear !== 'all') {
+                    const tipYear = String(tip.date).substring(0, 4);
+                    if (tipYear !== selectedYear) {
+                        return false;
+                    }
+                }
+                
+                // Month filter (overrides year if both selected)
+                if (selectedMonth !== 'all') {
+                    const tipMonth = String(tip.date).substring(0, 7);
+                    if (tipMonth !== selectedMonth) {
+                        return false;
+                    }
+                }
+                
+                // Search filter
                 if (searchTerm) {
                     const searchText = [
                         tip.text,
@@ -884,6 +969,9 @@
         function renderHubTips() {
             const container = document.getElementById('hubContainer');
             const noResults = document.getElementById('hubNoResults');
+            
+            // Update filtered count
+            document.getElementById('hub-filtered').textContent = hubFiltered.length;
             
             if (hubFiltered.length === 0) {
                 container.innerHTML = '';
@@ -925,6 +1013,45 @@
         }
         
         document.getElementById('hubSearch').addEventListener('input', () => filterHub(hubActiveCategory));
+        
+        // Update month filter when year changes
+        document.getElementById('yearFilter').addEventListener('change', function() {
+            const selectedYear = this.value;
+            const monthSelect = document.getElementById('monthFilter');
+            
+            // Save current month selection
+            const currentMonth = monthSelect.value;
+            
+            // Clear existing months
+            monthSelect.innerHTML = '<option value="all">全部月份</option>';
+            
+            if (selectedYear === 'all') {
+                // Show all months
+                renderMonthFilter();
+            } else {
+                // Show only months for selected year
+                const months = [...new Set(hubData
+                    .filter(t => String(t.date).startsWith(selectedYear))
+                    .map(t => String(t.date).substring(0, 7))
+                )].sort().reverse();
+                
+                months.forEach(month => {
+                    const opt = document.createElement('option');
+                    opt.value = month;
+                    const [year, m] = month.split('-');
+                    opt.textContent = year + ' 年 ' + m + ' 月';
+                    monthSelect.appendChild(opt);
+                });
+            }
+            
+            // Try to restore previous selection if still valid
+            if (currentMonth !== 'all' && monthSelect.querySelector(`option[value="${currentMonth}"]`)) {
+                monthSelect.value = currentMonth;
+            }
+            
+            // Apply filter
+            filterHub(hubActiveCategory);
+        });
     </script>
 </body>
 </html>
